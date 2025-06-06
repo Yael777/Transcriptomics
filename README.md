@@ -1,4 +1,4 @@
-![KEGG Pathway](https://yourdomain.com/images/kegg_pathway.png)
+
 
 # Transcriptomics rheumatoïde arthritis
 # 🧬 concluderende titel
