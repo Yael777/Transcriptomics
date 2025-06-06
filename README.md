@@ -25,7 +25,7 @@ Rheumatoid arthritis (RA) is a chronic autoimmune disease that affects joint tis
 ---
 
 ## 🧪 Methods
-![Flowschema](Resultaten/FlowschemaTranscriptomics.png)
+![Flowschema](Resultaten/Flowschema)
 
 
 ### 🔹 Data
