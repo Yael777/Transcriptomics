@@ -1,4 +1,4 @@
-![RNA figuur](Assets/istockphoto.jpg)
+![RNA figuur](Assets/pngtree.png)
 
 # Transcriptomics rheumatoïde arthritis
 # 🧬 concluderende titel
