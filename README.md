@@ -1,4 +1,4 @@
-
+![RNA figuur](Assets/RNA_figuur.webp)
 
 # Transcriptomics rheumatoïde arthritis
 # 🧬 concluderende titel
