@@ -1,4 +1,6 @@
-![RNA figuur](Assets/RNA_figuur_ReadMe.jpg)
+<p align="center">
+  <img src="assets/RNA_figuur_ReadMe.jpg" alt="Wizarding Spell Metrics Logo" width="600"/>
+</p>
 
 # Transcriptomics rheumatoïde arthritis
 # 🧬 concluderende titel
