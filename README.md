@@ -1,7 +1,6 @@
-![RNA Figure](Assets/RNA_figuur_ReadMe.jpg)
 
 <p align="center">
-  <img src="Assets/RNA_figuur_ReadMe.jpg" alt="RNA Figure" />
+  <img src="Assets/RNA_figuur_ReadMe.jpg" alt="RNA Figure"width="600"/>
 </p>
 
 # Transcriptomics rheumatoïde arthritis
