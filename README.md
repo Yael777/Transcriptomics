@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/RNA_figuur_Readme.jpg" alt="Wizarding Spell Metrics Logo" width="600"/>
+  <img src="assets/RNA_figuur_ReadMe.jpg" alt="RNA Figure" />
 </p>
 
 # Transcriptomics rheumatoïde arthritis
