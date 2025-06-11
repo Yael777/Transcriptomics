@@ -1,13 +1,5 @@
 
-<p align="left">
-  <img src="Assets/dna_and_rna.jpg" alt="RNA Figure" width="300"  />
-</p>
-
 <p align="center">
-  <img src="Assets/dna_and_rna.jpg" alt="RNA Figure" width="300"  />
-</p>
-
-<p align="right">
   <img src="Assets/dna_and_rna.jpg" alt="RNA Figure" width="300"  />
 </p>
 
