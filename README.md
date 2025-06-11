@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="Assets/file.avif" alt="RNA Figure" width="800"  />
+  <img src="Assets/RNA2.jpg" alt="RNA Figure" width="800"  />
 </p>
 
 # Transcriptomics rheumatoïde arthritis
