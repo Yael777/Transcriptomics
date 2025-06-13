@@ -39,7 +39,7 @@ Hoewel de precieze oorzaak van RA niet bekend, is het duidelijk is dat genetisch
 </figure>
 
 
-### 🔹 Meta data
+### 🔹 Data
 Er werden 4 samples van personen zonder RA (ACPA negatief) en 4 samples van personen met RA (diagnose van >12 maanden, ACPA positief) verkregen uit een synoviumbiopt. Informatie over deelnemers is te vinden in [Data/Meta_data.pdf](Data/Meta_data.pdf). Sequencing werd uitgevoerd waarna een transcriptomics analyse werd uitgevoerd in R, scripts zijn te vinden in [Scripts/R_script_transcriptomics_reuma.R](Scripts/R_script_transcriptomics_reuma.R) en flowschema is weergegeven in figuur 1.
 
 ### 🔹 Sorteren, indexeren en countmatrix
@@ -50,7 +50,7 @@ Een DESeq2-analyse werd uitgevoerd met DESeq2. Resultaten werden gevisualiseerd 
 
 ---
 
-## 📊 Results
+## 📊 Resultaten
 Er werd een transcriptomics analyse in R uitgevoerd waarbij de een DESeq, GO en KEGG-analyses werden toegepast. 
 
 ### 🔹 Differenitële genexpressie
@@ -63,5 +63,4 @@ Een GO analse werd uitgevoerd om differentiële significante pathways te bepalen
 
 ## Conclusion
 
-This analysis identified key genes and pathways altered in rheumatoid arthritis. The combination of DESeq2, GO, and KEGG analyses provides biological insight into disease mechanisms, highlighting immune and inflammatory responses as major drivers in RA.
 
