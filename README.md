@@ -31,9 +31,8 @@ Hoewel de precieze oorzaak van RA niet bekend, is het duidelijk is dat genetisch
 
 ---
 
-## 🧪 Methods
-
-<p align="center">
+## 🧪 Methode
+<figure style="width: 800px; margin: 0 auto; text-align: center;">
   <img src="Assets/Flowschema_project_transcriptomics.png" alt="Flowschema" width="800">
   <figcaption><em>Figuur 1: Flowschema transcriptomics analyse. Een weergave van de methode van de transcriptomics analyse in R vanaf sample collectie tot statistische analyses.</em></figcaption>
 </figure>
