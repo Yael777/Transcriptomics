@@ -51,29 +51,13 @@ Een DESeq2-analyse werd uitgevoerd met DESeq2. Resultaten werden gevisualiseerd 
 ---
 
 ## 📊 Results
+Er werd een transcriptomics analyse in R uitgevoerd waarbij de een DESeq, GO en KEGG-analyses werden toegepast. 
 
-### 🔹 Differential Expression
+### 🔹 Differenitële genexpressie
+Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- en downgereguleerde genen te bepalen. Resultaten zijn weergegeven in figuur… De meest statistische significante genen die upgereguleerd waren in reumapatiënten waren SRGN, BCL2A1 en downgereguleerde genen waren ANKRD30BL, MT-ND6, SLC9A3R2, ZNF598. 
 
-- Total significant DEGs (FDR < 0.05): **X**
-  - Upregulated in RA: **Y**
-  - Downregulated in RA: **Z**
-
-### 🔹 Top Genes
-
-- Most upregulated: *GENE_A*, *GENE_B*
-- Most downregulated: *GENE_X*, *GENE_Y*
-
-### 🔹 GO Enrichment
-
-- Top enriched biological processes include:
-  - Inflammatory response
-  - Immune system regulation
-  - Cell adhesion
-
-### 🔹 KEGG Pathway
-
-- RA-associated pathway `hsa05323` visualized
-- Genes mapped with fold changes (green = upregulated, red = downregulated)
+### 🔹 Rheumatoïde artritis pathway
+Een GO analse werd uitgevoerd om differentiële significante pathways te bepalen. GO-analyse resultaten werden gevisualiseerd in figuur …. Uit de analyse bleek dat de pathway  ‘immune system process’ veel differentiele significante genen bevatte. Verder onderzoek naar de pathway werd gedaan met de KEGG analyse, omdat deze pathwat relevant is in verband met reuma. Ondedeel uit de gekozen pathway, de ‘rheumatoide arthiritis’ pathway, werd gevisualiseerd in een KEGG pathway, resultaten zijn weergegeven in figuur … Verschillende genen in de pathway zijn differentieel in expressie. In het begin van de pathway waren genen van dendritische cellen (DC), zelf-reactieve Th1 cellen en synoviale fibroblasten upgereguleerd. Genen die zorgen voor angiogenesis, infiltratie van inflammatoire cellen (CCL en CXCL), ontsteking van synoviale pannus (IL6 en IL1β), gewrichts-en botafbraak (osteoclasten) waren sterk upgereguleerd. 
 
 ---
 
