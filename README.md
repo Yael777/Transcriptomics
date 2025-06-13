@@ -40,24 +40,13 @@ Hoewel de precieze oorzaak van RA niet bekend, is het duidelijk is dat genetisch
 
 
 ### 🔹 Data
+Er werden 4 samples van personen zonder RA (ACPA negatief) en 4 samples van personen met RA (diagnose van >12 maanden, ACPA positief) verkregen uit een synoviumbiopt. Informatie over deelnemers is te vinden in tabel…. In…. Sequencing werd uitgevoerd waarna een transcriptomics analyse werd uitgevoerd in R, scripts zijn te vinden in …….. en flowschema is weergegeven in figuur 1.
 
-- Raw count matrix from NCBI RNA-seq data
-- 8 samples total: 4 RA, 4 Normal
+### 🔹 Voorbereiden data
+Het referentiegenoom werd geïndexeerd met behulp van het menselijke referentiegenoom uit het NCBI-file: GCF_000001405.40_GRCh38.p14_genomic.fna, en de packages BiocManager en Rsubread. Monsters werden gemapt tegen het geïndexeerde referentiegenoom waaruit BAM-files ontstonden. BAM-files werden gesorteerd en geïndexeerd m.b.v Rsamtools.  M.b.v readr, dplyr, Rsamtools en Rsubread en het annotation NCBI file GCF_000001405.25_GRCh37.p13_genomic.gtf.gz werd een countmatrix gemaakt. Statistiek werd uitgevoerd op de count matrix file: count_matrix.txt. 
 
-### 🔹 Analysis Pipeline
-
-1. **DESeq2**:
-   - Count normalization
-   - Differential gene expression (RA vs Normal)
-   - Volcano plot visualization
-
-2. **Gene Ontology (GO)**:
-   - Enrichment of biological processes using `goseq`
-   - Visual representation of top 10 GO terms
-
-3. **KEGG Pathway**:
-   - Visualization of enriched pathways using `pathview`
-   - Highlighting up- and downregulated genes in RA
+### 🔹 Analyse
+Een DESeq2-analyse werd uitgevoerd met DESeq2. Resultaten werden gevisualiseerd in een vulcano plot m.b.v EnhancedVolcano en ggplot2. Een Gene Ontology (GO)-verrijkingsanalyse werd m.b.v goseq , geneLenDataBase en org.Dm.eg.db . De 10 meest significante resultaten werden gevisualiseerd. Een KEGG pathway analyse werd uitgevoerd m.b.v KEGGREST en de resultaten van de GO-analyse waarbij de pathway ‘rheumatoide arthritis’  met KEGG ID: hsa05323 uit GO term ‘immune system process’ werd geanalyseerd m.b.v pathview.
 
 ---
 
