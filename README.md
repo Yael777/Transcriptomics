@@ -35,17 +35,17 @@ Hoewel de precieze oorzaak van RA niet bekend, is het duidelijk is dat genetisch
 
 <figure>
   <img src="Assets/Flowschema_project_transcriptomics.png" alt="Flowschema">
-  <figcaption><em>Figure: Flowschema of the project transcriptomics pipeline.</em></figcaption>
+  <figcaption><em>Figuur 1: Flowschema transcriptomics analyse. Een weergave van de methode van de transcriptomics analyse in R vanaf sample collectie tot statistische analyses.</em></figcaption>
 </figure>
 
 
-### 🔹 Data
+### 🔹 Meta data
 Er werden 4 samples van personen zonder RA (ACPA negatief) en 4 samples van personen met RA (diagnose van >12 maanden, ACPA positief) verkregen uit een synoviumbiopt. Informatie over deelnemers is te vinden in tabel…. In…. Sequencing werd uitgevoerd waarna een transcriptomics analyse werd uitgevoerd in R, scripts zijn te vinden in …….. en flowschema is weergegeven in figuur 1.
 
-### 🔹 Voorbereiden data
+### 🔹 Sorteren, indexeren en countmatrix
 Het referentiegenoom werd geïndexeerd met behulp van het menselijke referentiegenoom uit het NCBI-file: GCF_000001405.40_GRCh38.p14_genomic.fna, en de packages BiocManager en Rsubread. Monsters werden gemapt tegen het geïndexeerde referentiegenoom waaruit BAM-files ontstonden. BAM-files werden gesorteerd en geïndexeerd m.b.v Rsamtools.  M.b.v readr, dplyr, Rsamtools en Rsubread en het annotation NCBI file GCF_000001405.25_GRCh37.p13_genomic.gtf.gz werd een countmatrix gemaakt. Statistiek werd uitgevoerd op de count matrix file: count_matrix.txt. 
 
-### 🔹 Analyse
+### 🔹 DEseq2-, GO- en KEGG-analyse
 Een DESeq2-analyse werd uitgevoerd met DESeq2. Resultaten werden gevisualiseerd in een vulcano plot m.b.v EnhancedVolcano en ggplot2. Een Gene Ontology (GO)-verrijkingsanalyse werd m.b.v goseq , geneLenDataBase en org.Dm.eg.db . De 10 meest significante resultaten werden gevisualiseerd. Een KEGG pathway analyse werd uitgevoerd m.b.v KEGGREST en de resultaten van de GO-analyse waarbij de pathway ‘rheumatoide arthritis’  met KEGG ID: hsa05323 uit GO term ‘immune system process’ werd geanalyseerd m.b.v pathview.
 
 ---
