@@ -33,10 +33,10 @@ Hoewel de precieze oorzaak van RA niet bekend, is het duidelijk is dat genetisch
 
 ## 🧪 Methode
 
-<figure style="text-align: center;">
+<p align="center">
   <img src="Assets/Flowschema_project_transcriptomics.png" alt="Flowschema" width="800">
-  <figcaption style="margin-top: 10px;"><em>Figuur 1: Flowschema transcriptomics analyse. Een weergave van de methode van de transcriptomics analyse in R vanaf sample collectie tot statistische analyses.</em></figcaption>
-</figure>
+</p>
+<p align="center"><em>Figuur 1: Flowschema transcriptomics analyse. Een weergave van de methode van de transcriptomics analyse in R vanaf sample collectie tot statistische analyses.</em></p>
 
 ### 🔹 Data
 Er werden 4 samples van personen zonder RA (ACPA negatief) en 4 samples van personen met RA (diagnose van >12 maanden, ACPA positief) verkregen uit een synoviumbiopt. Informatie over deelnemers is te vinden in [Data/Meta_data.pdf](Data/Meta_data.pdf). Sequencing werd uitgevoerd waarna een transcriptomics analyse werd uitgevoerd in R, scripts zijn te vinden in [Scripts/R_script_transcriptomics_reuma.R](Scripts/R_script_transcriptomics_reuma.R) en flowschema is weergegeven in figuur 1.
