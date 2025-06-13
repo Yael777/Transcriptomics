@@ -4,7 +4,7 @@
 </p>
 
 # Transcriptomics rheumatoïde arthritis
-# 🧬 concluderende titel
+# 🧬 Pro-inflammentoire genen, cytokines en cellen zijn up-gereguleerd in patiënten met RA waardoor balans wordt verstoord
 
 Brief one-liner describing the project, e.g., "Differential Gene Expression and GO/KEGG Pathway Analysis in Rheumatoid Arthritis Patients"
 
