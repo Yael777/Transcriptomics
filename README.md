@@ -1,10 +1,11 @@
+# Transcriptomics rheumatoïde arthritis
 
 <p align="center">
   <img src="Assets/RNA_figuur_readme.jpg" alt="RNA Figure" width="1100"  />
 </p>
 
-# Transcriptomics rheumatoïde arthritis
-# 🧬 Pro-inflammentoire genen, cytokines en cellen zijn up-gereguleerd in patiënten met RA waardoor balans wordt verstoord
+
+# 🧬 Pro-inflammentoire genen, cytokines en cellen zijn up-gereguleerd in patiënten met RA waardoor immuun-balans wordt verstoord
 
 Brief one-liner describing the project, e.g., "Differential Gene Expression and GO/KEGG Pathway Analysis in Rheumatoid Arthritis Patients"
 
