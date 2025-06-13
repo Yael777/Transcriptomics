@@ -40,7 +40,7 @@ Hoewel de precieze oorzaak van RA niet bekend, is het duidelijk is dat genetisch
 
 
 ### 🔹 Meta data
-Er werden 4 samples van personen zonder RA (ACPA negatief) en 4 samples van personen met RA (diagnose van >12 maanden, ACPA positief) verkregen uit een synoviumbiopt. Informatie over deelnemers is te vinden in tabel…. In…. Sequencing werd uitgevoerd waarna een transcriptomics analyse werd uitgevoerd in R, scripts zijn te vinden in [Scripts/R_script_transcriptomics_reuma.R](Scripts/R_script_transcriptomics_reuma.R) en flowschema is weergegeven in figuur 1.
+Er werden 4 samples van personen zonder RA (ACPA negatief) en 4 samples van personen met RA (diagnose van >12 maanden, ACPA positief) verkregen uit een synoviumbiopt. Informatie over deelnemers is te vinden in [Data/Meta_data.pdf](Data/Meta_data.pdf). Sequencing werd uitgevoerd waarna een transcriptomics analyse werd uitgevoerd in R, scripts zijn te vinden in [Scripts/R_script_transcriptomics_reuma.R](Scripts/R_script_transcriptomics_reuma.R) en flowschema is weergegeven in figuur 1.
 
 ### 🔹 Sorteren, indexeren en countmatrix
 Het referentiegenoom werd geïndexeerd met behulp van het menselijke referentiegenoom uit het NCBI-file: GCF_000001405.40_GRCh38.p14_genomic.fna, en de packages BiocManager en Rsubread. Monsters werden gemapt tegen het geïndexeerde referentiegenoom waaruit BAM-files ontstonden. BAM-files werden gesorteerd en geïndexeerd m.b.v Rsamtools.  M.b.v readr, dplyr, Rsamtools en Rsubread en het annotation NCBI file GCF_000001405.25_GRCh37.p13_genomic.gtf.gz werd een countmatrix gemaakt. Statistiek werd uitgevoerd op de count matrix file: count_matrix.txt. 
