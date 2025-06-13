@@ -26,9 +26,10 @@ Brief one-liner describing the project, e.g., "Differential Gene Expression and 
 
 ## 🧬 Introduction
 
-Genexpressie is de expressie van een fenotype door transcriptie en translatie (Buccitelli & Selbach, 2020). Transcriptomics is de studie van het transcriptoom (al het RNA in een cel of weefsel) wat iets over de genexpressie zegt. Hiermee kunnen effecten en oorzaken van verschillende ziektebeelden worden onderzocht. (Khodadadian et al., 2020).
-Reumatoïde artritis (RA) is een chronische auto-immuunziekte waarbij systematische synovitis (ontsteking van synovium) en bot- en gewrichtsafbraak optreedt. 5 op de 1000 volwassenen heeft RA waarvan 5-20% van de patiënten slecht op anti-reumatische medicatie reageert. RA ontstaat onder anderen door genetische factoren waardoor auto-immuun tolerantie verminderd. De complexiteit van het ziekteverloop en de onbekende oorzaak van RA zorgen ervoor dat het moeilijk behandelbaar is. (Suwa et al., 2023)
-Hoewel de precieze oorzaak van RA niet bekend, is het duidelijk is dat genetische factoren een rol spelen. Door de oorzaak van RA in beeld te krijgen kunnen gerichtere therapieën en preventie worden ontwikkeld. In dit onderzoek wordt er m.b.v transcriptomics de expressie van genen in RA en normale personen vergeleken om een beter beeld van de pathogenese van de ziekte te krijgen.
+Genexpressie is de expressie van een fenotype door transcriptie en translatie (Buccitelli & Selbach, 2020). Transcriptomics is de studie van het transcriptoom wat iets over de genexpressie zegt. Hiermee kunnen effecten en oorzaken van ziektebeelden worden onderzocht. (Khodadadian et al., 2020).
+Reumatoïde artritis (RA) is een chronische auto-immuunziekte waarbij systematische synovitis en bot- en gewrichtsafbraak optreedt. 5 op de 1000 volwassenen heeft RA waarvan 5-20% van de patiënten slecht op anti-reumatische medicatie reageert. RA ontstaat onder anderen door genetische factoren. De complexiteit van het ziekteverloop en de onbekende oorzaak van RA zorgen ervoor dat het moeilijk behandelbaar is. (Suwa et al., 2023)
+De precieze oorzaak van RA is onbekend, maar genetische factoren spelen een rol. Door de oorzaak van RA te onderzoeken kunnen gerichtere therapieën en preventie worden ontwikkeld. Dit onderzoek vergelijkt m.b.v transcriptomics verschillen in genexpressie tussen RA en normale personen om de pathogenese beter te begrijpen.
+
 
 ---
 
