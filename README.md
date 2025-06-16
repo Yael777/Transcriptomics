@@ -1,7 +1,7 @@
 # Transcriptomics reumatoïde arthritis
 
 <p align="center">
-  <img src="Assets/RNA_figuur_readme.png" alt="RNA Figure" width="1100"  />
+  <img src="Assets/Figuur_RNA_readme.png" alt="RNA Figure" width="1100"  />
 </p>
 
 
