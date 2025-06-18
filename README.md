@@ -62,8 +62,10 @@ Er werd een transcriptomics analyse in R uitgevoerd waarbij de een DESeq, GO en 
 ### 🔹 Differenitële genexpressie
 Er werd een transcriptomics analyse in R uitgevoerd waarbij een DESeq-, GO- en KEGG-analyse werd toegepast. Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- en down-gereguleerde genen te bepalen. Resultaten zijn weergegeven in figuur… De meest statistische significante up-gereguleerde genen in reumapatiënten waren SRGN, BCL2A, ADAMDEC1 en down-gereguleerde genen waren ANKRD30BL, MT-ND6, SLC9A3R2, ZNF598 zie tabel …
 
-| https://tableconvert.com/excel-to-markdown |
-|--------------------------------------------|
+                | Gen 	| Functie                                              |  Bron                                                       |
+                |-------|------------------------------------------------------|-------------------------------------------------------------|                     
+|Up-gereguleerd	| SRGN	| Betrokken bij pro-inflammentoire processen           | (Y. Chen et al., 2020)					                             |
+|---------------|-------|------------------------------------------------------|-------------------------------------------------------------|
 
 ### 🔹 Rheumatoïde artritis pathway
 Een GO analyse werd uitgevoerd om differentiële significante pathways te bepalen. GO-analyse resultaten werden gevisualiseerd in figuur …. Uit de analyse bleek dat de pathway  ‘immune system process’ veel differentiële significante genen bevatte. Omdat deze pathway relevant was i.v.m RA werd verder onderzoek gedaan m.b.v een KEGG-analyse. Uit deze pathway werd de ‘rheumatoide arthiritis’ pathway gevisualiseerd, resultaten zijn weergegeven in figuur … In het synoviale weefsel waren genen van dendritische cellen (DC), zelf-reactieve Th1 cellen en synoviale fibroblasten up-gereguleerd. Genen die zorgen voor angiogenesis, infiltratie van inflammatoire cellen (CCL en CXCL), ontsteking van synoviale pannus (IL6 en IL1β), gewrichts-en botafbraak (osteoclasten) waren sterk up-gereguleerd.  
