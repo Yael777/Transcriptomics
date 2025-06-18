@@ -62,7 +62,8 @@ Er werd een transcriptomics analyse in R uitgevoerd waarbij de een DESeq, GO en 
 ### 🔹 Differenitële genexpressie
 Er werd een transcriptomics analyse in R uitgevoerd waarbij een DESeq-, GO- en KEGG-analyse werd toegepast. Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- en down-gereguleerde genen te bepalen. Resultaten zijn weergegeven in figuur… De meest statistische significante up-gereguleerde genen in reumapatiënten waren SRGN, BCL2A, ADAMDEC1 en down-gereguleerde genen waren ANKRD30BL, MT-ND6, SLC9A3R2, ZNF598 zie tabel …
 
-
+*### Tabel 1. Genen die differentiële expressie tonen in RA patiënten. De meest significante up- en down-gereguleerde genen volgens de DEseq analyse in R. 
+Bijbehorende functie van de genen wordt beschreven.*
 | Regulatie         | Gen        | Functie                                                   | Bron                                                                 |
 |-------------------|------------|-----------------------------------------------------------|----------------------------------------------------------------------|
 | Up-gereguleerd    | SRGN       | Betrokken bij pro-inflammatoire processen                 | (Y. Chen et al., 2020)                                               |
