@@ -64,6 +64,7 @@ Er werd een transcriptomics analyse in R uitgevoerd waarbij een DESeq-, GO- en K
 
 * Tabel 1. Genen die differentiële expressie tonen in RA patiënten. De meest significante up- en down-gereguleerde genen volgens de DEseq analyse in R. 
 Bijbehorende functie van de genen wordt beschreven.*
+
 | Regulatie         | Gen        | Functie                                                   | Bron                                                                 |
 |-------------------|------------|-----------------------------------------------------------|----------------------------------------------------------------------|
 | Up-gereguleerd    | SRGN       | Betrokken bij pro-inflammatoire processen                 | (Y. Chen et al., 2020)                                               |
