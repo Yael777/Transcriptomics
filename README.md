@@ -38,7 +38,7 @@ De precieze oorzaak van RA is onbekend, maar genetische factoren spelen een rol.
   <tr>
     <td align="center">
       <img src="Assets/Flowschema_project_transcriptomics.png" alt="Flowschema" width="800"><br>
-      <em>Figuur 1: Flowschema transcriptomics analyse. Een weergave van de methode van de transcriptomics analyse in R vanaf sample collectie tot statistische analyses ontworpen met b.h.v Biorender.</em>
+      <em>Figuur 1: Flowschema transcriptomics analyse. Een weergave van de methode van de transcriptomics analyse in R vanaf sample collectie tot statistische analyses ontworpen met behulp van Biorender.</em>
     </td>
   </tr>
 </table>
