@@ -24,11 +24,9 @@ Dit onderzoek weergeeft de invloed van genexpressie op de pathogenese van reumat
 ---
 
 ## 🧬 Introductie
-Transcriptomics is de studie van het transcriptoom, met als doel inzicht te verkrijgen in genexpressie. Hiermee kunnen oorzaken en effecten van ziekteprocessen worden geanalyseerd (Khodadadian et al., 2020).
-Reumatoïde artritis (RA) is een chronische auto-immuunziekte waarbij systematische synovitis en bot- en gewrichtsafbraak optreedt. 5 op de 1000 volwassenen heeft RA waarvan 5-20% van de patiënten slecht op anti-reumatische medicatie reageert. RA wordt onder anderen veroorzaakt door genetische factoren, maar de precieze oorzaak is nog onduidelijk. De complexiteit van het ziekteverloop en de onbekende oorzaak van RA zorgen ervoor dat het moeilijk behandelbaar is. (Suwa et al., 2023)
+Transcriptomics onderzoekt genexpressie door het transcriptoom te analyseren, en biedt inzicht in ziekteprocessen (Khodadadian et al., 2020). Reumatoïde artritis (RA) is een chronische auto-immuunziekte waarbij systematische synovitis en bot- en gewrichtsafbraak optreedt. 5 op de 1000 volwassenen heeft RA waarvan 5-20% van de patiënten slecht op anti-reumatische medicatie reageert. Hoewel genetische factoren bijdragen aan het ontstaan van RA, is de precieze oorzaak onbekend. De complexiteit van het ziekteverloop en de onbekende oorzaak van RA zorgen ervoor dat het moeilijk behandelbaar is. (Suwa et al., 2023)
 
-De precieze oorzaak van RA is onbekend, maar genetische factoren spelen een rol. Door de oorzaak van RA te onderzoeken kunnen gerichtere therapieën en preventie worden ontwikkeld. Dit onderzoek vergelijkt m.b.v transcriptomics verschillen in genexpressie tussen RA en normale personen waarbij zowel differentieel significante genen als pathways in kaart worden gebracht om de pathogenese beter te begrijpen.
-
+Door de oorzaak van RA te onderzoeken kunnen gerichtere therapieën en preventie worden ontwikkeld. Dit onderzoek vergelijkt m.b.v transcriptomics verschillen in genexpressie tussen RA en normale personen waarbij zowel differentieel significante genen als pathways in kaart worden gebracht om de pathogenese beter te begrijpen.
 
 ---
 
@@ -92,7 +90,7 @@ Een GO-analyse werd uitgevoerd om differentiële significante pathways te bepale
 <table align="center" width="800">
   <tr>
     <td align="center">
-      <img src="Resultaten/Dotplot_GO_analyse.png" alt="GO-analyse_resultaten" width="800"><br>
+      <img src="Resultaten/Dotplot_GO_analyse_resultaten.png" alt="GO-analyse_resultaten" width="800"><br>
       <em>Figuur 3: 10 meest significante GO-terms volgens de GO-analyse. Aantal hits% (x-as) uitgezet tegen de GO-term (y-as). De grootte van de punten geven het aantal counts weer waarnaast de kleur van de punten de p-waarden weergeeft.</em>
     </td>
   </tr>
@@ -110,7 +108,7 @@ Uit de analyse bleek dat de pathway  ‘immune system process’ veel differenti
 </table>
 
 
-In het synoviale weefsel waren genen van dendritische cellen (DC), zelf-reactieve Th1 cellen en synoviale fibroblasten, genen voor infiltratie van inflammatoire cellen (CCL en CXCL), ontsteking van synoviale pannus (IL6 en IL1β), gewrichts-en botafbraak (osteoclasten) waren sterk up-gereguleerd. Genen betrokken bij angiogenesis (VEGF-pathway) en Th17 differentiatie (TGF-β) waren verlaagd. 
+In het synoviale weefsel waren genen van dendritische cellen (DC), zelf-reactieve Th1 cellen en synoviale fibroblasten, genen voor infiltratie van inflammatoire cellen (CCL en CXCL), ontsteking van synoviale pannus (IL6 en IL1β), gewrichts-en botafbraak (osteoclasten) waren sterk up-gereguleerd. Genen betrokken bij angiogenesis (VEGF-pathway) en Th17 differentiatie (TGF-β) waren verlaagd. Belangrijke genen uit de KEGG-analyse zijn weergegeven in tabel 2.
 
 *Tabel 2. Genen die significante differentiële expressie toonden in de reumatoïde artritis pathway in RA-patiënten. De meest significante up- en down-gereguleerde genen volgens de KEGG-analyse in R worden weergegeven. De functie van de genen en het proces waar ze bij betrokken zijn wordt beschreven met bijbehorende literatuur.*
 
@@ -128,9 +126,10 @@ In het synoviale weefsel waren genen van dendritische cellen (DC), zelf-reactiev
 ---
 
 ##  📝 Conclusie
-Bij dit onderzoek werd de invloed van genexpressie op de pathogenese van RA onderzocht m.b.v transcriptomics. RA is een auto-immuunziekte waarbij het immuunsysteem verstoord is, zoals uit de resultaten bleek. De DEseq analyse toonde dat genen met pro-inflammatoire eigenschappen verhoogd waren, terwijl genen met een functie om balans te behouden verlaagd waren in RA-patiënten. In het synoviale weefsel waren DC’s met MHC-klasse 2 verhoogd, wat leidt tot presentatie van lichaamseigen antigenen aan zelfreactieve Th1-cellen. Deze stimuleren pro-inflammatoire cytokines (zoals IL-1β, IL-6) die synoviumontsteking veroorzaken. Overactieve synoviale fibroblasten activeren osteoclasten, wat botafbraak bevordert. Sterk upgereguleerde chemokines CXCL en CCL trekken lymfocyten aan en veroorzaken zo systemische ontstekingen. Veranderingen in VEGF-pathway bleken angiogenese te remmen. Daarnaast was TGF-β sterk verlaagd waarmee pro-inflammatoire Th17-cellen differentiatie werd geremd. Remming van angiogenese en verlaging van TGF-β zijn niet kenmerkend voor RA.
+Dit onderzoek analyseerde de invloed van genexpressie in de pathogenese van RA m.b.v transcriptomics. RA is een auto-immuunziekte waarbij het immuunsysteem verstoord is, zoals uit de resultaten bleek. DESeq-analyse toonde verhoogde expressie van pro-inflammatoire genen en verminderde expressie van genen die balans reguleren in RA-patiënten. In het synoviale weefsel waren DC’s met MHC-klasse 2 verhoogd, wat leidt tot presentatie van lichaamseigen antigenen aan zelfreactieve Th1-cellen. Deze stimuleren pro-inflammatoire cytokines (zoals IL-1β, IL-6) die synoviumontsteking veroorzaken. 
+Overactieve synoviale fibroblasten stimuleren osteoclasten, wat botafbraak bevordert. Sterk up-gereguleerde chemokines CXCL en CCL veroorzaken zo systemische ontstekingen. Veranderingen in VEGF-pathway bleken angiogenese te remmen. Daarnaast was TGF-β sterk verlaagd waarmee pro-inflammatoire Th17-cel differentiatie werd geremd. Remming van angiogenese en verlaging van TGF-β zijn atypisch voor RA. 
 
-Bij RA waren pro-inflammatoire genen, cytokines en cellen verhoogd, wat chronische synoviumontsteking en gewrichts- en botafbraak veroorzaakt. Daarnaast waren genen die balans bewaren verlaagd. Hiermee kan geconcludeerd worden dat genexpressie een belangrijke rol speelt in de pathogenese van RA wat mogelijkheden voor gerichte therapieën bied. 
+Bij RA waren pro-inflammatoire genen, cytokines en cellen verhoogd, wat chronische synoviumontsteking en gewrichts- en botafbraak veroorzaakt. Hiermee kan geconcludeerd worden dat genexpressie een belangrijke rol speelt in de pathogenese van RA wat mogelijkheden voor gerichte therapieën bied. 
 
 Vroege immuunreactiegenen bleken verhoogd. Verder onderzoek naar interacties tussen DC’s en zelfreactieve Th1-cellen kan bijdragen aan preventie en behandeling
 
