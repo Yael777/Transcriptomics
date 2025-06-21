@@ -1,30 +1,29 @@
 <p align="center">
   <img src="Assets/Figuur_readme_RNA.jpg" alt="RNA Figure" width="1100"  />
 </p>
-*(NucleoSpin RNA, Mini Kit for RNA Purification, 2024)*
+(NucleoSpin RNA, Mini Kit for RNA Purification, 2024)
 
 # 🧬 Pro-inflammentoire genen, cytokines en cellen zijn up-gereguleerd in patiënten met RA waardoor immuun-balans wordt verstoord
-
-Brief one-liner describing the project, e.g., "Differential Gene Expression and GO/KEGG Pathway Analysis in Rheumatoid Arthritis Patients"
+Dit onderzoek weergeeft de invloed van genexpressie op de pathogenese van reumatoïde artritis m.b.v een transcriptomics analyse in R.
 
 ---
 
 ## 📁 Inhoud/structuur
 
-- `data/raw/` – fictionele datasets voor de analyse van spreuk effectiviteit, gevaar en welke spreuken het beste samengaan met verschillende types staf.  
-- `data/processed` - verwerkte datasets gegenereerd met scripts 
-- `scripts/` – scripts om prachtige onzin te genereren
-- `resultaten/` - grafieken en tabellen
-- `bronnen/` - gebruikte bronnen 
+- `Data/Ruwe_data/` – Ruwe sequencing data van paired-end reads verkregen van RA-patiënten en geen gezonde personen
+- `Sata/Processed_data` - Verwerkte datasets gegenereerd met scripts 
+- `scripts/` – R-script voor het uitvoeren van transcriptomicsanalyse
+- `Resultaten/` - Figuren en tabellen gegenereerd met scripts
+- `Bronnen/Literatuurlijst` - gebruikte bronnen voor het onderzoek
 - `README.md` - het document om de tekst hier te genereren
-- `assets/` - overige documenten voor de opmaak van deze pagina
-- `data_stewardship/` - Voor de competentie beheren ga je aantonen dat je projectgegevens kunt beheren met behulp van GitHub. In deze folder kan je hulpvragen terugvinden om je op gang te helpen met de uitleg van data stewardship. 
+- `Assets/` - overige figuren voor de opmaak van deze README.md pagina
+- `Data_stewardship/` - Uitleg over data stewardship in het algemeen en tijdens dit onderzoek.
 
 ---
 
-## 🧬 Introduction
+## 🧬 Introductie
 Transcriptomics is de studie van het transcriptoom, met als doel inzicht te verkrijgen in genexpressie. Hiermee kunnen oorzaken en effecten van ziekteprocessen worden geanalyseerd (Khodadadian et al., 2020).
-Reumatoïde artritis (RA) is een chronische auto-immuunziekte waarbij systematische synovitis en bot- en gewrichtsafbraak optreedt. 5 op de 1000 volwassenen heeft RA waarvan 5-20% van de patiënten slecht op anti-reumatische medicatie reageert. RA ontstaat onder anderen door genetische factoren. De complexiteit van het ziekteverloop en de onbekende oorzaak van RA zorgen ervoor dat het moeilijk behandelbaar is. (Suwa et al., 2023)
+Reumatoïde artritis (RA) is een chronische auto-immuunziekte waarbij systematische synovitis en bot- en gewrichtsafbraak optreedt. 5 op de 1000 volwassenen heeft RA waarvan 5-20% van de patiënten slecht op anti-reumatische medicatie reageert. RA ontstaat onder anderen door genetische factoren en genexpressie. De complexiteit van het ziekteverloop en de onbekende oorzaak van RA zorgen ervoor dat het moeilijk behandelbaar is. (Suwa et al., 2023)
 
 De precieze oorzaak van RA is onbekend, maar genetische factoren spelen een rol. Door de oorzaak van RA te onderzoeken kunnen gerichtere therapieën en preventie worden ontwikkeld. Dit onderzoek vergelijkt m.b.v transcriptomics verschillen in genexpressie tussen RA en normale personen waarbij zowel differentieel significante genen als pathways in kaart worden gebracht om de pathogenese beter te begrijpen.
 
@@ -43,10 +42,10 @@ De precieze oorzaak van RA is onbekend, maar genetische factoren spelen een rol.
 </table>
 
 ### 🔹 Data
-Er werden 4 samples van personen zonder RA (ACPA negatief) en 4 samples van RA-patiënten (diagnose van >12 maanden, ACPA positief) verkregen uit een synoviumbiopt. Informatie over deelnemers is te vinden in [Data/Meta_data.pdf](Data/Meta_data.pdf). Sequencing werd uitgevoerd waarna een transcriptomics analyse werd uitgevoerd in R, scripts zijn te vinden in [Scripts/R_script_reuma](Scripts/R_script_transcriptomics_reuma.R) en flowschema is weergegeven in figuur 1.
+Er werden 4 samples van personen zonder RA (ACPA negatief) en 4 samples van RA-patiënten (diagnose van >12 maanden, ACPA positief) verkregen uit een synoviumbiopt. Informatie over deelnemers is te vinden in [Data/Meta_data.pdf](Data/Meta_data.pdf). Sequencing werd uitgevoerd waaruit paired-end reads ontstonden, waarna een transcriptomics analyse werd uitgevoerd in R. Scripts zijn te vinden in [Scripts/R_script_reuma](Scripts/R_script_transcriptomics_reuma.R) en flowschema is weergegeven in figuur 1.
 
 ### 🔹 Sorteren, indexeren en countmatrix
-Het referentiegenoom werd geïndexeerd met behulp van het menselijke referentiegenoom uit het NCBI human genome GRCh38.p14 (accession nummer: GCF_000001405.40), en de packages BiocManager (Morgan & Ramos, 2024, v1.30.25) en Rsubread (Shi, Liao, & Smyth, 2024, v2.20.0). Monsters werden gemapt tegen het geïndexeerde referentiegenoom waaruit BAM-files ontstonden, zie [Data/Meta_data.pdf](Data/Meta_data.pdf). BAM-files werden gesorteerd en geïndexeerd m.b.v Rsamtools (Morgan et al., 2024, v2.22.0).  M.b.v readr (Wickham et al, 2024, v2.1.5), dplyr (Wickham et al., 2023, v1.1.4), Rsamtools en Rsubread en het annotation NCBI-file GRCh37.p13 (accession nummer: GCF_000001405.25) werd een countmatrix gemaakt [bewerkte_countmatrix](Resultaten/bewerkt_countmatrix). Statistiek werd uitgevoerd op de count matrix file: count_matrix.txt [Data/Meta_data.pdf](Data/Meta_data.pdf). 
+Het referentiegenoom werd geïndexeerd met behulp van het menselijke referentiegenoom uit het NCBI human genome GRCh38.p14 (accession nummer: GCF_000001405.40), en de packages BiocManager (Morgan & Ramos, 2024, v1.30.25) en Rsubread (Shi, Liao, & Smyth, 2024, v2.20.0). Monsters werden gemapt tegen het geïndexeerde referentiegenoom waaruit BAM-files ontstonden, zie [Data/Processed_data](Data/Processed_data). BAM-files werden gesorteerd en geïndexeerd m.b.v Rsamtools (Morgan et al., 2024, v2.22.0).  M.b.v readr (Wickham et al, 2024, v2.1.5), dplyr (Wickham et al., 2023, v1.1.4), Rsamtools en Rsubread en het annotation NCBI-file GRCh37.p13 (accession nummer: GCF_000001405.25) werd een countmatrix gemaakt [bewerkt_countmatrix.csv](Resultaten/bewerkt_countmatrix.csv). Statistiek werd uitgevoerd op de count matrix file [count_matrix.txt](Data/Processed_data/count_matrix.txt). 
 
 ### 🔹 DEseq2-, GO- en KEGG-analyse
 Een DESeq2-analyse werd uitgevoerd met DESeq2 (Love et al., 2024, v1.46.0). Resultaten werden gevisualiseerd in een volcano plot m.b.v EnhancedVolcano (Blighe et al., 2024, v1.24.0) en ggplot2 (Wickham et al., 2024, v3.5.2). Een Gene Ontology (GO)-verrijkingsanalyse werd m.b.v goseq (Young, Davidson, & Marini, 2024, v1.58.0), geneLenDataBase (Young, Davidson, & Marini, 2024, v 1.42.0) en org.Dm.eg.db  (Carlson, 2023, v 3.20.0). De 10 meest significante resultaten werden gevisualiseerd. Een padj<0.05 werd als significant beshouwd. Een KEGG-pathway analyse werd uitgevoerd m.b.v KEGGREST (Tenenbaum et al., 2024, v1.46.0) en de resultaten van de GO-analyse waarbij de pathway ‘rheumatoide arthritis’ met KEGG ID: hsa05323 uit GO-term ‘immune system process’ werd geanalyseerd m.b.v pathview (Luo, 2024, v1.46.0).
@@ -57,7 +56,19 @@ Een DESeq2-analyse werd uitgevoerd met DESeq2 (Love et al., 2024, v1.46.0). Resu
 Er werd een transcriptomics analyse in R uitgevoerd waarbij de een DESeq, GO en KEGG-analyses werden toegepast. 
 
 ### 🔹 Differenitële genexpressie
-Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- en down-gereguleerde genen te bepalen. Resultaten zijn weergegeven in figuur… Er waren 2085 genen significant up-gereguleerd waarvan de meest significante genen SRGN, BCL2A, ADAMDEC1 waren. Er waren 2487 down-gereguleerde genen waarvan de meest significante ANKRD30BL, MT-ND6, SLC9A3R2, ZNF598 waren, zie tabel …
+Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- en down-gereguleerde genen te bepalen. Resultaten zijn weergegeven in figuur 2.
+
+<table align="center" width="800">
+  <tr>
+    <td align="center">
+      <img src="Resultaten/Volcanoplot_DEseq_analyse.png" alt="Volcanoplot" width="800"><br>
+      <em>Figuur 3: Volcanoplot van differentieel significante genen uit de DEseq-analyse. De Log2 fold change (x-as) uitgezet tegen -Log10P significantie (y-as). De rode punten geven differentieel significante genen weer terwijl de groene punten genen weergeven die niet statistisch significant waren.</em>
+    </td>
+  </tr>
+</table>
+
+
+Er waren 2085 genen significant up-gereguleerd waarvan de meest significante genen SRGN, BCL2A, ADAMDEC1 waren. Er waren 2487 down-gereguleerde genen waarvan de meest significante ANKRD30BL, MT-ND6, SLC9A3R2, ZNF598 waren, zie tabel …
 
 *Tabel 1. Genen die significante differentiële expressie toonden in RA-patiënten. De meest significante up- en down-gereguleerde genen volgens de DEseq-analyse in R. De functie van de genen wordt beschreven met bijbehorende literatuur.*
 
@@ -73,7 +84,30 @@ Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- 
 
 
 ### 🔹 Rheumatoïde artritis pathway
-Een GO-analyse werd uitgevoerd om differentiële significante pathways te bepalen. GO-analyse resultaten werden gevisualiseerd in figuur …. Uit de analyse bleek dat de pathway  ‘immune system process’ veel differentiële significante genen bevatte. Omdat deze pathway relevant was i.v.m RA werd verder onderzoek gedaan m.b.v een KEGG-analyse. Uit deze pathway werd de ‘rheumatoide arthiritis’ pathway gevisualiseerd, resultaten zijn weergegeven in figuur … In het synoviale weefsel waren genen van dendritische cellen (DC), zelf-reactieve Th1 cellen en synoviale fibroblasten, genen voor infiltratie van inflammatoire cellen (CCL en CXCL), ontsteking van synoviale pannus (IL6 en IL1β), gewrichts-en botafbraak (osteoclasten) waren sterk up-gereguleerd. Genen betrokken bij angiogenesis (VEGF-pathway) en Th17 differentiatie (TGF-β) waren sterk verlaagd. 
+Een GO-analyse werd uitgevoerd om differentiële significante pathways te bepalen. GO-analyse resultaten werden gevisualiseerd in figuur 3. 
+
+<table align="center" width="800">
+  <tr>
+    <td align="center">
+      <img src="Resultaten/Dotplot_GO_analyse.png" alt="GO-analyse_resultaten" width="800"><br>
+      <em>Figuur 3: 10 meest significante GO-terms volgens de GO-analyse. Aantal hits% (x-as) uitgezet tegen de GO-term (y-as). De grootte van de punten geven het aantal counts weer waarnaast de kleur van de punten de p-waarden weergeeft.</em>
+    </td>
+  </tr>
+</table>
+
+Uit de analyse bleek dat de pathway  ‘immune system process’ veel differentiële significante genen bevatte. Omdat deze pathway relevant was i.v.m RA werd verder onderzoek gedaan m.b.v een KEGG-analyse. Uit deze pathway werd de ‘rheumatoide arthiritis’ pathway gevisualiseerd, resultaten zijn weergegeven in figuur 4.
+
+<table align="center" width="800">
+  <tr>
+    <td align="center">
+      <img src="Resultaten/Reumatoïde_artiritis_hsa05323_pathway.pathview.png" alt="KEGG-pathway_RA_resultaten" width="800"><br>
+      <em>Figuur 4: Reumatoïde artritis pathway gevisualiseerd uit KEGG-analyse. De pathway met KEGG-ID: hsa05323 geeft het immuun proces in het synovium weer dat is betrokken bij reumatoïde artiritis. Fold changes van genen zijn weergegeven met kleuren, down-gereguleerd genen (rood) en up-gereguleerde genen (groen). </em>
+    </td>
+  </tr>
+</table>
+
+
+In het synoviale weefsel waren genen van dendritische cellen (DC), zelf-reactieve Th1 cellen en synoviale fibroblasten, genen voor infiltratie van inflammatoire cellen (CCL en CXCL), ontsteking van synoviale pannus (IL6 en IL1β), gewrichts-en botafbraak (osteoclasten) waren sterk up-gereguleerd. Genen betrokken bij angiogenesis (VEGF-pathway) en Th17 differentiatie (TGF-β) waren sterk verlaagd. 
 
 *Tabel 2. Genen die significante differentiële expressie toonden in de Rheumatoide arthritis pathway RA-patiënten. De meest significante up- en down-gereguleerde genen volgens de KEGG-analyse in R. De functie van de genen en het proces waar ze bij betrokken zijn wordt beschreven met bijbehorende literatuur.*
 
