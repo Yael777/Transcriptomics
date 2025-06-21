@@ -1,7 +1,7 @@
 <p align="center">
   <img src="Assets/Figuur_readme_RNA.jpg" alt="RNA Figure" width="1100"  />
 </p>
-*(NucleoSpin RNA, Mini Kit for RNA Purification, 2024 )*
+_(NucleoSpin RNA, Mini Kit for RNA Purification, 2024 )_
 
 # 🧬 Pro-inflammentoire genen, cytokines en cellen zijn up-gereguleerd in patiënten met RA waardoor immuun-balans wordt verstoord
 
