@@ -86,7 +86,7 @@ Een GO analyse werd uitgevoerd om differentiële significante pathways te bepale
 | Up-gereguleerd   | Botafbraak door osteoclasten           | V-ATPase                 | Verankering van osteoclasten aan botoppervlak voor botafbraak         | Kovács et al., 2022                       |
 | Up-gereguleerd   | Leukocytmigratie                       | CXCL, CCL                | Chemokines die leukocyten aantrekken naar ontstoken weefsels          | X. Chen et al., 2020; Zhu et al., 2021    |
 | Up-gereguleerd   | VEGF-signaalroute                      | Ang1, Tie2               | Ligand en receptor die vaatstabiliteit stimuleren                     | Senna et al., 2013                        |
-| Down-gereguleerd | Angiogenese in synovium                | VEGF                     | Groeifactor betrokken bij vorming van bloedvaten (angiogenese)        | Khodadust et al., 2022                    |
+| Down-gereguleerd | VEGF-signaalroute                | VEGF                     | Groeifactor betrokken bij vorming van bloedvaten (angiogenese)        | Khodadust et al., 2022                    |
 | Down-gereguleerd | Differentiatie van Th17-cellen         | TGF-β                    | Cytokine die Th17-differentiatie stimuleert                           | Wang et al., 2023                         |
 
 ---
