@@ -62,7 +62,7 @@ Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- 
 <table align="center" width="800">
   <tr>
     <td align="center">
-      <img src="Resultaten/Volcanoplot_DEseq_analyse" alt="Volcanoplot" width="800"><br>
+      <img src="Resultaten/Volcanoplot_DEseq_analyse.png" alt="Volcanoplot" width="800"><br>
       <em>Figuur 3: Volcanoplot van differentieel significante genen uit de DEseq-analyse. De Log2 fold change (x-as) uitgezet tegen -Log10P significantie (y-as). De rode punten geven differentieel significante genen weer terwijl de groene punten genen weergeven die niet statistisch significant waren.</em>
     </td>
   </tr>
@@ -101,7 +101,7 @@ Uit de analyse bleek dat de pathway  ‘immune system process’ veel differenti
 <table align="center" width="800">
   <tr>
     <td align="center">
-      <img src="Resultaten/Reumatoïde_artiritis_hsa05323_pathway.pathview" alt="KEGG-pathway_RA_resultaten" width="800"><br>
+      <img src="Resultaten/Reumatoïde_artiritis_hsa05323_pathway.pathview.png" alt="KEGG-pathway_RA_resultaten" width="800"><br>
       <em>Figuur 4: Reumatoïde artritis pathway gevisualiseerd uit KEGG-analyse. De pathway met KEGG-ID: hsa05323 geeft het immuun proces in het synovium weer dat is betrokken bij reumatoïde artiritis. Fold changes van genen zijn weergegeven met kleuren, down-gereguleerd genen (rood) en up-gereguleerde genen (groen). </em>
     </td>
   </tr>
