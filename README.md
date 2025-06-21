@@ -1,7 +1,7 @@
 <p align="center">
   <img src="Assets/Figuur_readme_RNA.jpg" alt="RNA Figure" width="1100"  />
 </p>
-(NucleoSpin RNA, Mini Kit for RNA Purification, 2024 )
+*(NucleoSpin RNA, Mini Kit for RNA Purification, 2024 )*
 
 # 🧬 Pro-inflammentoire genen, cytokines en cellen zijn up-gereguleerd in patiënten met RA waardoor immuun-balans wordt verstoord
 
@@ -59,7 +59,7 @@ Er werd een transcriptomics analyse in R uitgevoerd waarbij de een DESeq, GO en 
 ### 🔹 Differenitële genexpressie
 Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- en down-gereguleerde genen te bepalen. Resultaten zijn weergegeven in figuur… Er waren 2085 genen significant up-gereguleerd waarvan de meest significante genen SRGN, BCL2A, ADAMDEC1 waren. Er waren 2487 down-gereguleerde genen waarvan de meest significante ANKRD30BL, MT-ND6, SLC9A3R2, ZNF598 waren, zie tabel …
 
-* Tabel 1. Genen die significante differentiële expressie toonden in RA-patiënten. De meest significante up- en down-gereguleerde genen volgens de DEseq-analyse in R. De functie van de genen wordt beschreven met bijbehorende literatuur.*
+*Tabel 1. Genen die significante differentiële expressie toonden in RA-patiënten. De meest significante up- en down-gereguleerde genen volgens de DEseq-analyse in R. De functie van de genen wordt beschreven met bijbehorende literatuur.*
 
 | Regulatie         | Gen        | Functie                                                   | Bron                                                                 |
 |-------------------|------------|-----------------------------------------------------------|----------------------------------------------------------------------|
@@ -75,7 +75,7 @@ Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- 
 ### 🔹 Rheumatoïde artritis pathway
 Een GO-analyse werd uitgevoerd om differentiële significante pathways te bepalen. GO-analyse resultaten werden gevisualiseerd in figuur …. Uit de analyse bleek dat de pathway  ‘immune system process’ veel differentiële significante genen bevatte. Omdat deze pathway relevant was i.v.m RA werd verder onderzoek gedaan m.b.v een KEGG-analyse. Uit deze pathway werd de ‘rheumatoide arthiritis’ pathway gevisualiseerd, resultaten zijn weergegeven in figuur … In het synoviale weefsel waren genen van dendritische cellen (DC), zelf-reactieve Th1 cellen en synoviale fibroblasten, genen voor infiltratie van inflammatoire cellen (CCL en CXCL), ontsteking van synoviale pannus (IL6 en IL1β), gewrichts-en botafbraak (osteoclasten) waren sterk up-gereguleerd. Genen betrokken bij angiogenesis (VEGF-pathway) en Th17 differentiatie (TGF-β) waren sterk verlaagd. 
 
-* Tabel 2. Genen die significante differentiële expressie toonden in de Rheumatoide arthritis pathway RA-patiënten. De meest significante up- en down-gereguleerde genen volgens de KEGG-analyse in R. De functie van de genen en het proces waar ze bij betrokken zijn wordt beschreven met bijbehorende literatuur.*
+*Tabel 2. Genen die significante differentiële expressie toonden in de Rheumatoide arthritis pathway RA-patiënten. De meest significante up- en down-gereguleerde genen volgens de KEGG-analyse in R. De functie van de genen en het proces waar ze bij betrokken zijn wordt beschreven met bijbehorende literatuur.*
 
 | Regulatie       | Proces                               | Genen                  | Functie                                                                 | Bron                                      |
 |------------------|----------------------------------------|--------------------------|-------------------------------------------------------------------------|-------------------------------------------|
@@ -92,6 +92,7 @@ Een GO-analyse werd uitgevoerd om differentiële significante pathways te bepale
 
 ##  📝 Conclusie
 Bij dit onderzoek werd de invloed van genexpressie op de pathogenese van RA onderzocht m.b.v transcriptomics. RA is een auto-immuunziekte waarbij het immuunsysteem verstoord is, zoals uit de resultaten bleek. De DEseq analyse toonde dat genen met pro-inflammatoire eigenschappen verhoogd waren, terwijl genen met een functie om balans te behouden verlaagd waren in RA-patiënten. In het synoviale weefsel waren DC’s met MHC-klasse 2 verhoogd, wat leidt tot presentatie van lichaamseigen antigenen aan zelfreactieve Th1-cellen. Deze stimuleren pro-inflammatoire cytokines (zoals IL-1β, IL-6) die synoviumontsteking veroorzaken. Overactieve synoviale fibroblasten activeren osteoclasten, wat botafbraak bevordert. Sterk upgereguleerde chemokines CXCL en CCL trekken lymfocyten aan en veroorzaken zo systemische ontsteking. Veranderingen in VEGF-pathway bleken angiogenese te remmen. Daarnaast was TGF-β sterk verlaagd waarmee pro-inflammatoire Th17-cellen differentiatie werd geremd. Remming van angiogenese en verlaging van TGF-β zijn niet kenmerkend voor RA.
+
 Bij RA zijn pro-inflammatoire genen, cytokines en cellen verhoogd, wat chronische synoviumontsteking en gewrichts- en botafbraak veroorzaakt. Daarnaast zijn genen die balans bewaren verlaagd. Hiermee kan geconcludeerd worden dat genexpressie een belangrijke rol speelt in de pathogenese van RA en geven mogelijkheden voor gerichte therapieën. 
 Vroege immuunreactiegenen bleken verhoogd. Verder onderzoek naar interacties tussen DC’s en zelfreactieve Th1-cellen kan bijdragen aan preventie en behandeling
 
