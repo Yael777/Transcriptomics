@@ -10,18 +10,18 @@ Dit onderzoek weergeeft de invloed van genexpressie op de pathogenese van reumat
 
 ## 📁 Inhoud/structuur
 
-- `data/raw/` – fictionele datasets voor de analyse van spreuk effectiviteit, gevaar en welke spreuken het beste samengaan met verschillende types staf.  
-- `data/processed` - verwerkte datasets gegenereerd met scripts 
-- `scripts/` – scripts om prachtige onzin te genereren
-- `resultaten/` - grafieken en tabellen
-- `bronnen/` - gebruikte bronnen 
+- `Data/Ruwe_data/` – Ruwe sequencing data van paired-end reads verkregen van RA-patiënten en geen gezonde personen
+- `Sata/Processed_data` - Verwerkte datasets gegenereerd met scripts 
+- `scripts/` – R-script voor het uitvoeren van transcriptomicsanalyse
+- `Resultaten/` - Figuren en tabellen gegenereerd met scripts
+- `Bronnen/Literatuurlijst` - gebruikte bronnen voor het onderzoek
 - `README.md` - het document om de tekst hier te genereren
-- `assets/` - overige documenten voor de opmaak van deze pagina
-- `data_stewardship/` - Voor de competentie beheren ga je aantonen dat je projectgegevens kunt beheren met behulp van GitHub. In deze folder kan je hulpvragen terugvinden om je op gang te helpen met de uitleg van data stewardship. 
+- `Assets/` - overige figuren voor de opmaak van deze README.md pagina
+- `Data_stewardship/` - Uitleg over data stewardship in het algemeen en tijdens dit onderzoek.
 
 ---
 
-## 🧬 Introduction
+## 🧬 Introductie
 Transcriptomics is de studie van het transcriptoom, met als doel inzicht te verkrijgen in genexpressie. Hiermee kunnen oorzaken en effecten van ziekteprocessen worden geanalyseerd (Khodadadian et al., 2020).
 Reumatoïde artritis (RA) is een chronische auto-immuunziekte waarbij systematische synovitis en bot- en gewrichtsafbraak optreedt. 5 op de 1000 volwassenen heeft RA waarvan 5-20% van de patiënten slecht op anti-reumatische medicatie reageert. RA ontstaat onder anderen door genetische factoren en genexpressie. De complexiteit van het ziekteverloop en de onbekende oorzaak van RA zorgen ervoor dat het moeilijk behandelbaar is. (Suwa et al., 2023)
 
@@ -42,7 +42,7 @@ De precieze oorzaak van RA is onbekend, maar genetische factoren spelen een rol.
 </table>
 
 ### 🔹 Data
-Er werden 4 samples van personen zonder RA (ACPA negatief) en 4 samples van RA-patiënten (diagnose van >12 maanden, ACPA positief) verkregen uit een synoviumbiopt. Informatie over deelnemers is te vinden in [Data/Meta_data.pdf](Data/Meta_data.pdf). Sequencing werd uitgevoerd waarna een transcriptomics analyse werd uitgevoerd in R, scripts zijn te vinden in [Scripts/R_script_reuma](Scripts/R_script_transcriptomics_reuma.R) en flowschema is weergegeven in figuur 1.
+Er werden 4 samples van personen zonder RA (ACPA negatief) en 4 samples van RA-patiënten (diagnose van >12 maanden, ACPA positief) verkregen uit een synoviumbiopt. Informatie over deelnemers is te vinden in [Data/Meta_data.pdf](Data/Meta_data.pdf). Sequencing werd uitgevoerd waaruit paired-end reads ontstonden, waarna een transcriptomics analyse werd uitgevoerd in R. Scripts zijn te vinden in [Scripts/R_script_reuma](Scripts/R_script_transcriptomics_reuma.R) en flowschema is weergegeven in figuur 1.
 
 ### 🔹 Sorteren, indexeren en countmatrix
 Het referentiegenoom werd geïndexeerd met behulp van het menselijke referentiegenoom uit het NCBI human genome GRCh38.p14 (accession nummer: GCF_000001405.40), en de packages BiocManager (Morgan & Ramos, 2024, v1.30.25) en Rsubread (Shi, Liao, & Smyth, 2024, v2.20.0). Monsters werden gemapt tegen het geïndexeerde referentiegenoom waaruit BAM-files ontstonden, zie [Data/Processed_data](Data/Processed_data). BAM-files werden gesorteerd en geïndexeerd m.b.v Rsamtools (Morgan et al., 2024, v2.22.0).  M.b.v readr (Wickham et al, 2024, v2.1.5), dplyr (Wickham et al., 2023, v1.1.4), Rsamtools en Rsubread en het annotation NCBI-file GRCh37.p13 (accession nummer: GCF_000001405.25) werd een countmatrix gemaakt [bewerkt_countmatrix.csv](Resultaten/bewerkt_countmatrix.csv). Statistiek werd uitgevoerd op de count matrix file [count_matrix.txt](Data/Processed_data/count_matrix.txt). 
