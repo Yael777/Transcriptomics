@@ -1,7 +1,7 @@
 <p align="center">
   <img src="Assets/Figuur_readme_RNA.jpg" alt="RNA Figure" width="1100"  />
 </p>
-_(NucleoSpin RNA, Mini Kit for RNA Purification, 2024 )_
+*(NucleoSpin RNA, Mini Kit for RNA Purification, 2024)*
 
 # 🧬 Pro-inflammentoire genen, cytokines en cellen zijn up-gereguleerd in patiënten met RA waardoor immuun-balans wordt verstoord
 
@@ -46,10 +46,10 @@ De precieze oorzaak van RA is onbekend, maar genetische factoren spelen een rol.
 Er werden 4 samples van personen zonder RA (ACPA negatief) en 4 samples van RA-patiënten (diagnose van >12 maanden, ACPA positief) verkregen uit een synoviumbiopt. Informatie over deelnemers is te vinden in [Data/Meta_data.pdf](Data/Meta_data.pdf). Sequencing werd uitgevoerd waarna een transcriptomics analyse werd uitgevoerd in R, scripts zijn te vinden in [Scripts/R_script_reuma](Scripts/R_script_transcriptomics_reuma.R) en flowschema is weergegeven in figuur 1.
 
 ### 🔹 Sorteren, indexeren en countmatrix
-Het referentiegenoom werd geïndexeerd met behulp van het menselijke referentiegenoom uit het NCBI human genome GRCh38.p14 (accession nummer: GCF_000001405.40), en de packages BiocManager (Morgan & Ramos, 2024, v1.30.25) en Rsubread (Shi, Liao, & Smyth, 2024, v2.20.0). Monsters werden gemapt tegen het geïndexeerde referentiegenoom waaruit BAM-files ontstonden, zie [locatie]. BAM-files werden gesorteerd en geïndexeerd m.b.v Rsamtools (Morgan et al., 2024, v2.22.0).  M.b.v readr (Wickham et al, 2024, v2.1.5), dplyr (Wickham et al., 2023, v1.1.4), Rsamtools en Rsubread en het annotation NCBI-file GRCh37.p13 (accession nummer: GCF_000001405.25) werd een countmatrix gemaakt. Statistiek werd uitgevoerd op de count matrix file: count_matrix.txt [locatie]. 
+Het referentiegenoom werd geïndexeerd met behulp van het menselijke referentiegenoom uit het NCBI human genome GRCh38.p14 (accession nummer: GCF_000001405.40), en de packages BiocManager (Morgan & Ramos, 2024, v1.30.25) en Rsubread (Shi, Liao, & Smyth, 2024, v2.20.0). Monsters werden gemapt tegen het geïndexeerde referentiegenoom waaruit BAM-files ontstonden, zie [Data/Meta_data.pdf](Data/Meta_data.pdf). BAM-files werden gesorteerd en geïndexeerd m.b.v Rsamtools (Morgan et al., 2024, v2.22.0).  M.b.v readr (Wickham et al, 2024, v2.1.5), dplyr (Wickham et al., 2023, v1.1.4), Rsamtools en Rsubread en het annotation NCBI-file GRCh37.p13 (accession nummer: GCF_000001405.25) werd een countmatrix gemaakt [bewerkte_countmatrix](Resultaten/bewerkt_countmatrix). Statistiek werd uitgevoerd op de count matrix file: count_matrix.txt [Data/Meta_data.pdf](Data/Meta_data.pdf). 
 
 ### 🔹 DEseq2-, GO- en KEGG-analyse
-Een DESeq2-analyse werd uitgevoerd met DESeq2 (Love et al., 2024, v1.46.0). Resultaten werden gevisualiseerd in een volcano plot m.b.v EnhancedVolcano (Blighe et al., 2024, v1.24.0) en ggplot2 (Wickham et al., 2024, v3.5.2). Een Gene Ontology (GO)-verrijkingsanalyse werd m.b.v goseq (Young, Davidson, & Marini, 2024, v1.58.0), geneLenDataBase (Young, Davidson, & Marini, 2024, v 1.42.0) en org.Dm.eg.db  (Carlson, 2023, v 3.20.0). De 10 meest significante resultaten werden gevisualiseerd. Een KEGG-pathway analyse werd uitgevoerd m.b.v KEGGREST (Tenenbaum et al., 2024, v1.46.0) en de resultaten van de GO-analyse waarbij de pathway ‘rheumatoide arthritis’ met KEGG ID: hsa05323 uit GO-term ‘immune system process’ werd geanalyseerd m.b.v pathview (Luo, 2024, v1.46.0).
+Een DESeq2-analyse werd uitgevoerd met DESeq2 (Love et al., 2024, v1.46.0). Resultaten werden gevisualiseerd in een volcano plot m.b.v EnhancedVolcano (Blighe et al., 2024, v1.24.0) en ggplot2 (Wickham et al., 2024, v3.5.2). Een Gene Ontology (GO)-verrijkingsanalyse werd m.b.v goseq (Young, Davidson, & Marini, 2024, v1.58.0), geneLenDataBase (Young, Davidson, & Marini, 2024, v 1.42.0) en org.Dm.eg.db  (Carlson, 2023, v 3.20.0). De 10 meest significante resultaten werden gevisualiseerd. Een padj<0.05 werd als significant beshouwd. Een KEGG-pathway analyse werd uitgevoerd m.b.v KEGGREST (Tenenbaum et al., 2024, v1.46.0) en de resultaten van de GO-analyse waarbij de pathway ‘rheumatoide arthritis’ met KEGG ID: hsa05323 uit GO-term ‘immune system process’ werd geanalyseerd m.b.v pathview (Luo, 2024, v1.46.0).
 
 ---
 
