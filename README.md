@@ -1,7 +1,7 @@
 <p align="center">
   <img src="Assets/Figuur_readme_RNA.jpg" alt="RNA Figure" width="1100"  />
 </p>
-*(NucleoSpin RNA, Mini Kit for RNA Purification, 2024)*
+(NucleoSpin RNA, Mini Kit for RNA Purification, 2024)
 
 # 🧬 Pro-inflammentoire genen, cytokines en cellen zijn up-gereguleerd in patiënten met RA waardoor immuun-balans wordt verstoord
 
@@ -57,7 +57,19 @@ Een DESeq2-analyse werd uitgevoerd met DESeq2 (Love et al., 2024, v1.46.0). Resu
 Er werd een transcriptomics analyse in R uitgevoerd waarbij de een DESeq, GO en KEGG-analyses werden toegepast. 
 
 ### 🔹 Differenitële genexpressie
-Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- en down-gereguleerde genen te bepalen. Resultaten zijn weergegeven in figuur… Er waren 2085 genen significant up-gereguleerd waarvan de meest significante genen SRGN, BCL2A, ADAMDEC1 waren. Er waren 2487 down-gereguleerde genen waarvan de meest significante ANKRD30BL, MT-ND6, SLC9A3R2, ZNF598 waren, zie tabel …
+Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- en down-gereguleerde genen te bepalen. Resultaten zijn weergegeven in figuur 2.
+
+<table align="center" width="800">
+  <tr>
+    <td align="center">
+      <img src="Resultaten/Volcanoplot_DEseq_analyse" alt="Volcanoplot" width="800"><br>
+      <em>Figuur 3: Volcanoplot van differentieel significante genen uit de DEseq-analyse. De Log2 fold change (x-as) uitgezet tegen -Log10P significantie (y-as). De rode punten geven differentieel significante genen weer terwijl de groene punten genen weergeven die niet statistisch significant waren.</em>
+    </td>
+  </tr>
+</table>
+
+
+Er waren 2085 genen significant up-gereguleerd waarvan de meest significante genen SRGN, BCL2A, ADAMDEC1 waren. Er waren 2487 down-gereguleerde genen waarvan de meest significante ANKRD30BL, MT-ND6, SLC9A3R2, ZNF598 waren, zie tabel …
 
 *Tabel 1. Genen die significante differentiële expressie toonden in RA-patiënten. De meest significante up- en down-gereguleerde genen volgens de DEseq-analyse in R. De functie van de genen wordt beschreven met bijbehorende literatuur.*
 
@@ -73,7 +85,30 @@ Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- 
 
 
 ### 🔹 Rheumatoïde artritis pathway
-Een GO-analyse werd uitgevoerd om differentiële significante pathways te bepalen. GO-analyse resultaten werden gevisualiseerd in figuur …. Uit de analyse bleek dat de pathway  ‘immune system process’ veel differentiële significante genen bevatte. Omdat deze pathway relevant was i.v.m RA werd verder onderzoek gedaan m.b.v een KEGG-analyse. Uit deze pathway werd de ‘rheumatoide arthiritis’ pathway gevisualiseerd, resultaten zijn weergegeven in figuur … In het synoviale weefsel waren genen van dendritische cellen (DC), zelf-reactieve Th1 cellen en synoviale fibroblasten, genen voor infiltratie van inflammatoire cellen (CCL en CXCL), ontsteking van synoviale pannus (IL6 en IL1β), gewrichts-en botafbraak (osteoclasten) waren sterk up-gereguleerd. Genen betrokken bij angiogenesis (VEGF-pathway) en Th17 differentiatie (TGF-β) waren sterk verlaagd. 
+Een GO-analyse werd uitgevoerd om differentiële significante pathways te bepalen. GO-analyse resultaten werden gevisualiseerd in figuur 3. 
+
+<table align="center" width="800">
+  <tr>
+    <td align="center">
+      <img src="Resultaten/Dotplot_GO_analyse.png" alt="GO-analyse_resultaten" width="800"><br>
+      <em>Figuur 3: 10 meest significante GO-terms volgens de GO-analyse. Aantal hits% (x-as) uitgezet tegen de GO-term (y-as). De grootte van de punten geven het aantal counts weer waarnaast de kleur van de punten de p-waarden weergeeft.</em>
+    </td>
+  </tr>
+</table>
+
+Uit de analyse bleek dat de pathway  ‘immune system process’ veel differentiële significante genen bevatte. Omdat deze pathway relevant was i.v.m RA werd verder onderzoek gedaan m.b.v een KEGG-analyse. Uit deze pathway werd de ‘rheumatoide arthiritis’ pathway gevisualiseerd, resultaten zijn weergegeven in figuur 4.
+
+<table align="center" width="800">
+  <tr>
+    <td align="center">
+      <img src="Resultaten/Reumatoïde_artiritis_hsa05323_pathway.pathview" alt="KEGG-pathway_RA_resultaten" width="800"><br>
+      <em>Figuur 4: Reumatoïde artritis pathway gevisualiseerd uit KEGG-analyse. De pathway met KEGG-ID: hsa05323 geeft het immuun proces in het synovium weer dat is betrokken bij reumatoïde artiritis. Fold changes van genen zijn weergegeven met kleuren, down-gereguleerd genen (rood) en up-gereguleerde genen (groen). </em>
+    </td>
+  </tr>
+</table>
+
+
+In het synoviale weefsel waren genen van dendritische cellen (DC), zelf-reactieve Th1 cellen en synoviale fibroblasten, genen voor infiltratie van inflammatoire cellen (CCL en CXCL), ontsteking van synoviale pannus (IL6 en IL1β), gewrichts-en botafbraak (osteoclasten) waren sterk up-gereguleerd. Genen betrokken bij angiogenesis (VEGF-pathway) en Th17 differentiatie (TGF-β) waren sterk verlaagd. 
 
 *Tabel 2. Genen die significante differentiële expressie toonden in de Rheumatoide arthritis pathway RA-patiënten. De meest significante up- en down-gereguleerde genen volgens de KEGG-analyse in R. De functie van de genen en het proces waar ze bij betrokken zijn wordt beschreven met bijbehorende literatuur.*
 
