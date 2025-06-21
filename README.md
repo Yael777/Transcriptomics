@@ -91,6 +91,21 @@ Een GO analyse werd uitgevoerd om differentiële significante pathways te bepale
 | Down-gereguleerd | Angiogenese in synovium              | VEGF                   | Groeifactor betrokken bij bloedvat vorming (angiogenese)  | Khodadust et al.,    |                  |                                      |                        |                                                           |   2022  
 | Down-gereguleerd | Differentiatie van Th17-cellen       | TGF-β                  | Cytokine die Th17-differentiatie stimuleert               | Wang et al., 2023    
 
+
+
+## Samenvattende Tabel: Regulatie van immuun- en ontstekingsprocessen
+
+| Regulatie       | Proces                               | Genen                  | Functie                                                                 | Bron                                      |
+|------------------|----------------------------------------|--------------------------|-------------------------------------------------------------------------|-------------------------------------------|
+| Up-gereguleerd   | Activatie van Th1-cellen door DC’s     | CD80/86, CD28, CTLA4     | Co-stimulator moleculen                                                | Wehr et al., 2019                         |
+|                  |                                        | MHCII                    | Activeringsmolecuul                                                    | Wehr et al., 2019                         |
+| Up-gereguleerd   | Inflammatie in synoviale pannus        | IL-1β, IL-6              | Pro-inflammatoire cytokines                                            | Wehr et al., 2019                         |
+| Up-gereguleerd   | Botafbraak door osteoclasten           | V-ATPase                 | Verankering van osteoclasten aan botoppervlak voor botafbraak         | Kovács et al., 2022                       |
+| Up-gereguleerd   | Leukocytmigratie                       | CXCL, CCL                | Chemokines die leukocyten aantrekken naar ontstoken weefsels          | X. Chen et al., 2020; Zhu et al., 2021    |
+| Up-gereguleerd   | VEGF-signaalroute                      | Ang1, Tie2               | Ligand en receptor die vaatstabiliteit stimuleren                     | Senna et al., 2013                        |
+| Down-gereguleerd | Angiogenese in synovium                | VEGF                     | Groeifactor betrokken bij vorming van bloedvaten (angiogenese)        | Khodadust et al., 2022                    |
+| Down-gereguleerd | Differentiatie van Th17-cellen         | TGF-β                    | Cytokine die Th17-differentiatie stimuleert                           | Wang et al., 2023                         |
+
 ---
 
 ##  📝 Conclusie
