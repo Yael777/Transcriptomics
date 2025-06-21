@@ -10,14 +10,16 @@ Dit onderzoek weergeeft de invloed van genexpressie op de pathogenese van reumat
 
 ## 📁 Inhoud/structuur
 
+- `Assets/` - Figuren voor de opmaak van deze README.md pagina
+- `Bronnen/Literatuurlijst` - Gebruikte bronnen voor het onderzoek
 - `Data/Ruwe_data/` – Ruwe sequencing data van paired-end reads verkregen van RA-patiënten en gezonde personen
-- `Sata/Processed_data` - Verwerkte datasets gegenereerd met scripts 
-- `scripts/` – R-script voor het uitvoeren van transcriptomicsanalyse
+- `Data/Processed_data` - Verwerkte datasets gegenereerd met scripts
+- `Data_stewardship/` - Uitleg over data stewardship in het algemeen en hoe het is toegepast tijdens dit onderzoek
 - `Resultaten/` - Figuren en tabellen gegenereerd met scripts
-- `Bronnen/Literatuurlijst` - gebruikte bronnen voor het onderzoek
-- `README.md` - het document om de tekst hier te genereren
-- `Assets/` - overige figuren voor de opmaak van deze README.md pagina
-- `Data_stewardship/` - Uitleg over data stewardship in het algemeen en tijdens dit onderzoek.
+- `Scripts/` – R-script voor het uitvoeren van transcriptomicsanalyse
+- `README.md` - Het document om de tekst hier te genereren
+
+
 
 ---
 
