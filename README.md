@@ -10,7 +10,7 @@ Dit onderzoek weergeeft de invloed van genexpressie op de pathogenese van reumat
 
 ## 📁 Inhoud/structuur
 
-- `Data/Ruwe_data/` – Ruwe sequencing data van paired-end reads verkregen van RA-patiënten en geen gezonde personen
+- `Data/Ruwe_data/` – Ruwe sequencing data van paired-end reads verkregen van RA-patiënten en gezonde personen
 - `Sata/Processed_data` - Verwerkte datasets gegenereerd met scripts 
 - `scripts/` – R-script voor het uitvoeren van transcriptomicsanalyse
 - `Resultaten/` - Figuren en tabellen gegenereerd met scripts
