@@ -92,7 +92,7 @@ Een GO-analyse werd uitgevoerd om differentiële significante pathways te bepale
 <table align="center" width="800">
   <tr>
     <td align="center">
-      <img src="Resultaten/Dotplot_GO_analyse.png" alt="GO-analyse_resultaten" width="800"><br>
+      <img src="Resultaten/Dotplot_GO_analyse_resultaten.png" alt="GO-analyse_resultaten" width="800"><br>
       <em>Figuur 3: 10 meest significante GO-terms volgens de GO-analyse. Aantal hits% (x-as) uitgezet tegen de GO-term (y-as). De grootte van de punten geven het aantal counts weer waarnaast de kleur van de punten de p-waarden weergeeft.</em>
     </td>
   </tr>
