@@ -24,11 +24,9 @@ Dit onderzoek weergeeft de invloed van genexpressie op de pathogenese van reumat
 ---
 
 ## 🧬 Introductie
-Transcriptomics is de studie van het transcriptoom, met als doel inzicht te verkrijgen in genexpressie. Hiermee kunnen oorzaken en effecten van ziekteprocessen worden geanalyseerd (Khodadadian et al., 2020).
-Reumatoïde artritis (RA) is een chronische auto-immuunziekte waarbij systematische synovitis en bot- en gewrichtsafbraak optreedt. 5 op de 1000 volwassenen heeft RA waarvan 5-20% van de patiënten slecht op anti-reumatische medicatie reageert. RA wordt onder anderen veroorzaakt door genetische factoren, maar de precieze oorzaak is nog onduidelijk. De complexiteit van het ziekteverloop en de onbekende oorzaak van RA zorgen ervoor dat het moeilijk behandelbaar is. (Suwa et al., 2023)
+Transcriptomics onderzoekt genexpressie door het transcriptoom te analyseren, en biedt inzicht in ziekteprocessen (Khodadadian et al., 2020). Reumatoïde artritis (RA) is een chronische auto-immuunziekte waarbij systematische synovitis en bot- en gewrichtsafbraak optreedt. 5 op de 1000 volwassenen heeft RA waarvan 5-20% van de patiënten slecht op anti-reumatische medicatie reageert. Hoewel genetische factoren bijdragen aan het ontstaan van RA, is de precieze oorzaak onbekend. De complexiteit van het ziekteverloop en de onbekende oorzaak van RA zorgen ervoor dat het moeilijk behandelbaar is. (Suwa et al., 2023)
 
-De precieze oorzaak van RA is onbekend, maar genetische factoren spelen een rol. Door de oorzaak van RA te onderzoeken kunnen gerichtere therapieën en preventie worden ontwikkeld. Dit onderzoek vergelijkt m.b.v transcriptomics verschillen in genexpressie tussen RA en normale personen waarbij zowel differentieel significante genen als pathways in kaart worden gebracht om de pathogenese beter te begrijpen.
-
+Door de oorzaak van RA te onderzoeken kunnen gerichtere therapieën en preventie worden ontwikkeld. Dit onderzoek vergelijkt m.b.v transcriptomics verschillen in genexpressie tussen RA en normale personen waarbij zowel differentieel significante genen als pathways in kaart worden gebracht om de pathogenese beter te begrijpen.
 
 ---
 
