@@ -60,7 +60,7 @@ Er werd een transcriptomics analyse in R uitgevoerd waarbij de een DESeq, GO en 
 ### 🔹 Differenitële genexpressie
 Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- en down-gereguleerde genen te bepalen. Resultaten zijn weergegeven in figuur… Er waren 2085 genen significant up-gereguleerd waarvan de meest significante genen SRGN, BCL2A, ADAMDEC1 waren. Er waren 2487 down-gereguleerde genen waarvan de meest significante ANKRD30BL, MT-ND6, SLC9A3R2, ZNF598 waren, zie tabel …
 
-* Tabel 1. Genen die significante differentiële expressie toonden in RA-patiënten. De meest significante up- en down-gereguleerde genen volgens de DEseq- en KEGG-analyse in R. De functie van de genen wordt beschreven met bijbehorende literatuur.*
+* Tabel 1. Genen die significante differentiële expressie toonden in RA-patiënten. De meest significante up- en down-gereguleerde genen volgens de DEseq-analyse in R. De functie van de genen wordt beschreven met bijbehorende literatuur.*
 
 | Regulatie         | Gen        | Functie                                                   | Bron                                                                 |
 |-------------------|------------|-----------------------------------------------------------|----------------------------------------------------------------------|
@@ -75,25 +75,8 @@ Een DESeq analyse werd uitgevoerd om het aantal differentiële significante up- 
 
 ### 🔹 Rheumatoïde artritis pathway
 Een GO analyse werd uitgevoerd om differentiële significante pathways te bepalen. GO-analyse resultaten werden gevisualiseerd in figuur …. Uit de analyse bleek dat de pathway  ‘immune system process’ veel differentiële significante genen bevatte. Omdat deze pathway relevant was i.v.m RA werd verder onderzoek gedaan m.b.v een KEGG-analyse. Uit deze pathway werd de ‘rheumatoide arthiritis’ pathway gevisualiseerd, resultaten zijn weergegeven in figuur … In het synoviale weefsel waren genen van dendritische cellen (DC), zelf-reactieve Th1 cellen en synoviale fibroblasten up-gereguleerd. Genen die zorgen voor angiogenesis, infiltratie van inflammatoire cellen (CCL en CXCL), ontsteking van synoviale pannus (IL6 en IL1β), gewrichts-en botafbraak (osteoclasten) waren sterk up-gereguleerd.  
-## Samenvattende Tabel: Regulatie van immuun- en ontstekingsprocessen
 
-| Regulatie        | Proces                               | Genen                  | Functie                                                   | Bron   
-|------------------|--------------------------------------|------------------------|-----------------------------------------------------------|--------
-| Up-gereguleerd   | Activatie van Th1-cellen door DC’s   | CD80/86, CD28,         |  Co-stimulator moleculen                                  | Wehr et al., 2019
-|                  |                                      | CTLA4                  |                                                           | 
-|                  |                                      | MHCII                  | Activeringsmolecuul                                       | Wehr et al., 2019   
-| Up-gereguleerd   | Inflammatie in synoviale pannus      | IL-1β, IL-6            | Pro-inflammatoire cytokines                               | Wehr et al., 2019    
-| Up-gereguleerd   | Botafbraak door osteoclasten         | V-ATPase               | Verankering van osteoclasten aan botoppervlak             | Kovács et al., 2022 
-|                  |                                      |                        | voor botafbraak                                           |                     
-| Up-gereguleerd   | Leukocytmigratie                     | CXCL, CCL              | Chemokines die leukocyten aantrekken naar 2020;           | X. Chen et al., 2020;
-|                  |                                      |                        | ontstoken weefsels                                        | Zhu et al., 2021  
-| Up-gereguleerd   | VEGF-signaalroute                    | Ang1, Tie2             | Ligand en receptor die vaatstabiliteit stimuleren         | Senna et al., 2013   
-| Down-gereguleerd | Angiogenese in synovium              | VEGF                   | Groeifactor betrokken bij bloedvat vorming (angiogenese)  | Khodadust et al.,    |                  |                                      |                        |                                                           |   2022  
-| Down-gereguleerd | Differentiatie van Th17-cellen       | TGF-β                  | Cytokine die Th17-differentiatie stimuleert               | Wang et al., 2023    
-
-
-
-## Samenvattende Tabel: Regulatie van immuun- en ontstekingsprocessen
+* Tabel 2. Genen die significante differentiële expressie toonden in de Rheumatoide arthritis pathway RA-patiënten. De meest significante up- en down-gereguleerde genen volgens de KEGG-analyse in R. De functie van de genen en het proces waar ze bij betrokken zijn wordt beschreven met bijbehorende literatuur.*
 
 | Regulatie       | Proces                               | Genen                  | Functie                                                                 | Bron                                      |
 |------------------|----------------------------------------|--------------------------|-------------------------------------------------------------------------|-------------------------------------------|
