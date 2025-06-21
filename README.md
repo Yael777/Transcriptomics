@@ -110,7 +110,7 @@ Uit de analyse bleek dat de pathway  ‘immune system process’ veel differenti
 </table>
 
 
-In het synoviale weefsel waren genen van dendritische cellen (DC), zelf-reactieve Th1 cellen en synoviale fibroblasten, genen voor infiltratie van inflammatoire cellen (CCL en CXCL), ontsteking van synoviale pannus (IL6 en IL1β), gewrichts-en botafbraak (osteoclasten) waren sterk up-gereguleerd. Genen betrokken bij angiogenesis (VEGF-pathway) en Th17 differentiatie (TGF-β) waren verlaagd. 
+In het synoviale weefsel waren genen van dendritische cellen (DC), zelf-reactieve Th1 cellen en synoviale fibroblasten, genen voor infiltratie van inflammatoire cellen (CCL en CXCL), ontsteking van synoviale pannus (IL6 en IL1β), gewrichts-en botafbraak (osteoclasten) waren sterk up-gereguleerd. Genen betrokken bij angiogenesis (VEGF-pathway) en Th17 differentiatie (TGF-β) waren verlaagd. Belangrijke genen uit de KEGG-analyse zijn weergegeven in tabel 2.
 
 *Tabel 2. Genen die significante differentiële expressie toonden in de reumatoïde artritis pathway in RA-patiënten. De meest significante up- en down-gereguleerde genen volgens de KEGG-analyse in R worden weergegeven. De functie van de genen en het proces waar ze bij betrokken zijn wordt beschreven met bijbehorende literatuur.*
 
